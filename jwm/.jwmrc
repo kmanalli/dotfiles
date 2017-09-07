@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<JWM>
+	<StartupCommand>
+		./.fehbg &
+		xcompmgr -Cc &
+		tint2 &
+		numlockx &
+	</StartupCommand>
+
+    <Group>
+        <Option>aerosnap</Option>
+        <Option>icon:</Option>
+        <Option>notitle</Option>
+        <Option>centered</Option>
+    </Group>
+
+    <WindowStyle>
+        <Width>1</Width>
+        <Height>1</Height>
+        <Outline>#000000</Outline>
+        <Opacity>1</Opacity>
+        <Active>
+            <Outline>#1a1a1a</Outline>
+        </Active>
+    </WindowStyle>
+
+    <Desktops width="2" height="1"></Desktops>
+
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+    <DoubleClickDelta>2</DoubleClickDelta>
+    <FocusModel>click</FocusModel>
+    <SnapMode distance="10">border</SnapMode>
+    <MoveMode coordinates="off">opaque</MoveMode>
+    <ResizeMode coordinates="off">opaque</ResizeMode>
+
+    <Key mask="A" key="Tab">nextstacked</Key>
+    <Key mask="A" key="F4">close</Key>
+    <Key mask="A" key="Right">rdesktop</Key>
+    <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="4" key="f">exec: thunar</Key>
+    <Key mask="4" key="t">exec: urxvt</Key>
+    <Key mask="4" key="w">exec: feh --randomize --bg-fill img/</Key>
+    <Key mask="4" key="r">exec: jwm -restart</Key>
+    <Key mask="4" key="p">exec: poweroff</Key>
+    <Key key="Print">exec: scrot</Key>
+</JWM>
