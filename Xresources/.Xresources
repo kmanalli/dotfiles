@@ -1,0 +1,17 @@
+*geometry: 54x14
+
+URxvt*font: xft:artwiz lime:size=7
+URxvt*boldFont:
+
+URxvt.scrollBar: false
+URxvt.internalBorder: 15
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+rofi*font: artwiz lime 7
+
+#include ".colors"
