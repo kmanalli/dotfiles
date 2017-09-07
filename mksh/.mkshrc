@@ -1,0 +1,15 @@
+[[ ! -n $DISPLAY ]]	&& setleds -D +num
+
+export PS1="$(tput setaf 3) -- $(tput sgr0)"
+export EDITOR="micro"
+
+alias ls="ls --color=always"
+alias la="ls --color=always -A"
+
+push() {
+	git add -A
+	printf " commit: >> "
+	read -r ans
+	git commit -m "${ans:-'Commit.'}"
+	git push
+}
