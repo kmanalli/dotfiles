@@ -2,32 +2,25 @@
 <JWM>
 	<StartupCommand>
 		./.fehbg &
-		xcompmgr -Cc &
+		xcompmgr -c -t-5 -l-5 -r3.5 -o.45 &
 		tint2 &
 		numlockx &
 	</StartupCommand>
 
-    <Group>
-        <Option>aerosnap</Option>
-        <Option>icon:</Option>
-        <Option>notitle</Option>
-        <Option>centered</Option>
-    </Group>
+    <Group><Option>centered</Option></Group>
 
     <WindowStyle>
         <Width>1</Width>
         <Height>1</Height>
-        <Outline>#000000</Outline>
+        <Outline>#545454</Outline>
         <Opacity>1</Opacity>
         <Active>
-            <Outline>#1a1a1a</Outline>
+            <Outline>#4a4a4a</Outline>
         </Active>
     </WindowStyle>
 
     <Desktops width="2" height="1"></Desktops>
 
-    <DoubleClickSpeed>400</DoubleClickSpeed>
-    <DoubleClickDelta>2</DoubleClickDelta>
     <FocusModel>click</FocusModel>
     <SnapMode distance="10">border</SnapMode>
     <MoveMode coordinates="off">opaque</MoveMode>
