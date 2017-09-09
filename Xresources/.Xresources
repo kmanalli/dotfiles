@@ -14,4 +14,4 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 rofi*font: artwiz lime 7
 
-#include ".colors"
+#include ".colors.Xresources"
