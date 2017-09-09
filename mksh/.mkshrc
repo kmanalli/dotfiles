@@ -1,7 +1,7 @@
 [[ ! -n $DISPLAY ]]	&& setleds -D +num
 
 export PS1="$(tput setaf 3) -- $(tput sgr0)"
-export EDITOR="urxvt -e micro 2> /dev/null || micro"
+export EDITOR='eval urxvt -e micro 2> /dev/null || micro'
 
 alias ls="ls --color=always"
 alias la="ls --color=always -A"
