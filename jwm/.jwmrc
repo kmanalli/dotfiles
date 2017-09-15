@@ -2,7 +2,7 @@
 <JWM>
 	<StartupCommand>
 		./.fehbg &
-		xcompmgr -c -t-5 -l-5 -r3.5 -o.45 &
+		xcompmgr -Cc -t -5 -l -5 -r 3.5 -o .75 &
 		tint2 &
 		numlockx &
 	</StartupCommand>
@@ -12,10 +12,10 @@
     <WindowStyle>
         <Width>1</Width>
         <Height>1</Height>
-        <Outline>#545454</Outline>
+        <Outline>#262626</Outline>
         <Opacity>1</Opacity>
         <Active>
-            <Outline>#4a4a4a</Outline>
+            <Outline>#303030</Outline>
         </Active>
     </WindowStyle>
 
@@ -30,6 +30,7 @@
     <Key mask="A" key="F4">close</Key>
     <Key mask="A" key="Right">rdesktop</Key>
     <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="4" key="e">exec: rofi -show run</Key>
     <Key mask="4" key="f">exec: thunar</Key>
     <Key mask="4" key="t">exec: urxvt</Key>
     <Key mask="4" key="w">exec: feh --randomize --bg-fill img/</Key>

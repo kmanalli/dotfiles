@@ -1,7 +1,10 @@
+Xft.rgba: none
 *geometry: 54x14
 
 URxvt*font: xft:artwiz lime:size=7
 URxvt*boldFont:
+
+URxvt.letterSpace: 0
 
 URxvt.scrollBar: false
 URxvt.internalBorder: 15
