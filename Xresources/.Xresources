@@ -1,7 +1,11 @@
+Xft.rgba: none
 *geometry: 54x14
 
-URxvt*font: xft:artwiz lime:size=7
+URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1
+!			-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
 URxvt*boldFont:
+
+URxvt.letterSpace: 0
 
 URxvt.scrollBar: false
 URxvt.internalBorder: 15

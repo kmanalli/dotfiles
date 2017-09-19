@@ -2,7 +2,7 @@
 <JWM>
 	<StartupCommand>
 		./.fehbg &
-		xcompmgr -Cc -t -5 -l -5 -r 3.5 -o .75 &
+		xcompmgr -c -t -5 -l -5 -r 3.5 -o .75 &
 		tint2 &
 		numlockx &
 	</StartupCommand>
@@ -12,10 +12,10 @@
     <WindowStyle>
         <Width>1</Width>
         <Height>1</Height>
-        <Outline>#262626</Outline>
+        <Outline>#151515</Outline>
         <Opacity>1</Opacity>
         <Active>
-            <Outline>#303030</Outline>
+            <Outline>#090909</Outline>
         </Active>
     </WindowStyle>
 
