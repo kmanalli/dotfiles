@@ -2,20 +2,22 @@
 <JWM>
 	<StartupCommand>
 		./.fehbg &
-		xcompmgr -c -t -5 -l -5 -r 3.5 -o .75 &
 		tint2 &
 		numlockx &
+		xcompmgr -c -t -5 -l -5 -r 3.5 -o .5 &
 	</StartupCommand>
 
-    <Group><Option>centered</Option></Group>
+    <Group>
+        <Option>centered</Option>
+    </Group>
 
     <WindowStyle>
         <Width>1</Width>
         <Height>1</Height>
-        <Outline>#151515</Outline>
+        <Outline>#1F292E</Outline>
         <Opacity>1</Opacity>
         <Active>
-            <Outline>#090909</Outline>
+            <Outline>#1D272B</Outline>
         </Active>
     </WindowStyle>
 
@@ -30,11 +32,15 @@
     <Key mask="A" key="F4">close</Key>
     <Key mask="A" key="Right">rdesktop</Key>
     <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="A" key="m">maximize</Key>
+    <Key mask="A" key="i">minimize</Key>
     <Key mask="4" key="e">exec: rofi -show run</Key>
     <Key mask="4" key="f">exec: thunar</Key>
     <Key mask="4" key="t">exec: urxvt</Key>
-    <Key mask="4" key="w">exec: feh --randomize --bg-fill img/</Key>
     <Key mask="4" key="r">exec: jwm -restart</Key>
     <Key mask="4" key="p">exec: poweroff</Key>
     <Key key="Print">exec: scrot</Key>
+
+    <Mouse context="root" button="1">exec: feh --randomize --bg-fill img</Mouse>
+    <Mouse context="root" button="2">showdesktop</Mouse>
 </JWM>
