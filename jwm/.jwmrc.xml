@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<JWM>
+	<StartupCommand>
+		./.fehbg
+		numlockx
+		xcompmgr -c -t -5 -l -5 -r 3.5 -o .5
+	</StartupCommand>
+
+    <Desktops width="2" height="1"></Desktops>
+
+    <Tray y="-16" width="480" halign="center" height="32">
+        <Spacer width="32"/>
+        <TaskList maxwidth="64"/>
+        <Clock format="%H:%M"></Clock>
+        <Spacer width="32"/>
+    </Tray>
+
+    <Group><Option>centered</Option></Group>
+
+    <WindowStyle>
+        <Width>1</Width>
+        <Height>1</Height>
+        <Opacity>1</Opacity>
+        <Outline>#1F292E</Outline>
+        <Active>
+            <Outline>#2F2333</Outline>
+        </Active>
+    </WindowStyle>
+
+    <TrayStyle group="false" list="all">
+        <Outline>#1D141F</Outline>
+        <Background>#1F1721</Background>
+        <Foreground>#3C2842</Foreground>
+        <Opacity>1</Opacity>
+    </TrayStyle>
+
+    <TaskListStyle list="all">
+        <Foreground>#DD91F3</Foreground>
+        <Background>#1F1721</Background>
+        <Font>-benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1</Font>
+        <Active>
+            <Foreground>#BDE077</Foreground>
+            <Background>#1F1721</Background>
+        </Active>
+    </TaskListStyle>
+
+    <ClockStyle>
+        <Foreground>#77BEE0</Foreground>
+        <Background>#1F1721</Background>
+        <Font>-benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1</Font>
+    </ClockStyle>
+
+    <PopupStyle enabled="false"></PopupStyle>
+
+    <FocusModel>click</FocusModel>
+    <SnapMode distance="10">border</SnapMode>
+    <MoveMode coordinates="off">opaque</MoveMode>
+    <ResizeMode coordinates="off">opaque</ResizeMode>
+
+    <Key mask="A" key="Tab">nextstacked</Key>
+    <Key mask="A" key="F4">close</Key>
+    <Key mask="A" key="Right">rdesktop</Key>
+    <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="A" key="m">maximize</Key>
+    <Key mask="A" key="i">minimize</Key>
+    <Key mask="4" key="e">exec: rofi -show run</Key>
+    <Key mask="4" key="f">exec: thunar</Key>
+    <Key mask="4" key="t">exec: urxvt</Key>
+    <Key mask="4" key="r">exec: jwm -restart</Key>
+    <Key mask="4" key="p">exec: poweroff</Key>
+    <Key key="Print">exec: scrot</Key>
+
+    <Mouse context="root" button="1">exec: feh --randomize --bg-fill img</Mouse>
+    <Mouse context="root" button="2">showdesktop</Mouse>
+</JWM>
