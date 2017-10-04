@@ -1,14 +1,13 @@
 Xft.rgba: none
-*geometry: 54x14
+*geometry: 48x12
 
 URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1
-!			-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
 URxvt*boldFont:
 
 URxvt.letterSpace: 0
 
 URxvt.scrollBar: false
-URxvt.internalBorder: 15
+URxvt.internalBorder: 16
 
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -16,6 +15,6 @@ URxvt.perl-ext-common: default,clipboard
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
-rofi*font: artwiz lime 7
+rofi*font: artwiz lemon 7
 
 #include ".colors.Xresources"
