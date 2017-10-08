@@ -23,9 +23,9 @@
         <Width>1</Width>
         <Height>1</Height>
         <Opacity>1</Opacity>
-        <Outline>#4A3637</Outline>
+        <Outline>#6D715E</Outline>
         <Active>
-            <Outline>#775759</Outline>
+            <Outline>#4A3637</Outline>
         </Active>
     </WindowStyle>
 
