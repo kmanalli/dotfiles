@@ -1,6 +1,6 @@
 [[ ! -n $DISPLAY ]]	&& setleds -D +num
 
-export PS1=`printf '\033[32m #: \033[0m'`
+export PS1=`printf '\033[34m #: \033[0m'`
 export EDITOR="micro"
 export VISUAL="urxvt -g 86x70 -e micro $@"
 

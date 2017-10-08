@@ -1,13 +1,15 @@
 Xft.rgba: none
 *geometry: 48x12
 
-URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1
+URxvt*font: xft:artwiz lemon:size=7
 URxvt*boldFont:
-
-URxvt.letterSpace: 0
 
 URxvt.scrollBar: false
 URxvt.internalBorder: 16
+
+URxvt*cursorUnderline: true
+URxvt*cursorBlink: true
+URxvt*pointerBlank: false
 
 URxvt.iso14755: false
 URxvt.iso14755_52: false
