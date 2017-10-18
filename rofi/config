@@ -1,0 +1,21 @@
+rofi.modi: run
+rofi.width: 16
+rofi.lines: 16
+rofi.columns: 1
+rofi.font: artwiz lemon 7
+rofi.bw: 8
+rofi.location: 1
+rofi.padding: 16
+rofi.yoffset: 32
+rofi.xoffset: 24
+rofi.fixed-num-lines: false
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+
+rofi.font: artwiz lemon 7
+
+rofi.color-enabled: true
+rofi.color-normal: #2c2c2c, #6699cc, #2c2c2c, #2c2c2c, #f2777a
+rofi.color-urgent: #2c2c2c, #d75f00, #d0d0d0, #d75f00, #1c1c1c
+rofi.color-active: #2c2c2c, #005f87, #d0d0d0, #005f87, #1c1c1c
+rofi.color-window: #2c2c2c, #1c1c1c, #1c1c1c

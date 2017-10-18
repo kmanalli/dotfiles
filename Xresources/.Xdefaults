@@ -1,23 +1,17 @@
-Xft.rgba: none
-*geometry: 48x12
+URxvt*geometry: 48x12
 
-URxvt*font: -benis-lemon-*-*-*-*-*-*-*-*-*-*-*-*,-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
-
+URxvt*font: -*-lemon-*
 URxvt*boldFont:
+URxvt*italicFont:
+URxvt*bolditalicFont:
 
-URxvt.scrollBar: false
-URxvt.internalBorder: 16
+URxvt*scrollBar: false
+URxvt*internalBorder: 16
 
-URxvt*cursorUnderline: true
-URxvt*cursorBlink: true
-URxvt*pointerBlank: false
-
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-URxvt.perl-ext-common: default,clipboard
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-
-rofi*font: artwiz lemon 7
+URxvt*iso14755: false
+URxvt*iso14755_52: false
+URxvt*perl-ext-common: default,clipboard
+URxvt*keysym.Shift-Control-C: perl:clipboard:copy
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
 
 #include ".colors.Xresources"

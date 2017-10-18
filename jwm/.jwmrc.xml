@@ -2,39 +2,85 @@
 
 <JWM>
 	<StartupCommand>
-		./.fehbg
 		numlockx
-		xcompmgr -c -t -3 -l -6 -r 4 -o .64
+		xcompmgr -c -r 8 -l -12 -t -8 -o .2 &
 	</StartupCommand>
 
-    <Desktops width="2" height="1"></Desktops>
+	<Desktops width="2" height="1">
+		<Background type="solid">#5D6061</Background>
+	</Desktops>
 
-    <WindowStyle>
-        <Width>1</Width>
-        <Height>1</Height>
-        <Opacity>1</Opacity>
-        <Outline>#6D715E</Outline>
-        <Active>
-            <Outline>#4A3637</Outline>
-        </Active>
-    </WindowStyle>
 
-    <FocusModel>click</FocusModel>
-    <SnapMode distance="20">border</SnapMode>
-    <MoveMode coordinates="off">opaque</MoveMode>
-    <ResizeMode coordinates="off">opaque</ResizeMode>
+	<Tray x="0" y="0" autohide="off">
+		<Spacer width="16"/>
+		<TrayButton label="Menu">exec: rofi -show run</TrayButton>
+		<Spacer width="32"/>
+		<TaskList maxwidth="64"/>
+		<Clock format="%H:%M"><Button>showdesktop</Button></Clock>
+		<Spacer width="16"/>
+	</Tray>
 
-    <Key mask="A" key="Tab">nextstacked</Key>
-    <Key mask="A" key="F4">close</Key>
-    <Key mask="4" key="Right">rdesktop</Key>
-    <Key mask="4" key="Left">ldesktop</Key>
-    <Key mask="4" key="m">maximize</Key>
-    <Key mask="4" key="i">minimize</Key>
-    <Key mask="4" key="e">exec: rofi -show run</Key>
-    <Key mask="4" key="t">exec: urxvt -title urxvt</Key>
-    <Key mask="4" key="r">exec: jwm -restart</Key>
-    <Key mask="4" key="p">exec: poweroff</Key>
-    <Key key="Print">exec: scrot sct/$RANDOM.png</Key>
+	<WindowStyle>
+		<Width>1</Width>
+		<Height>1</Height>
+		<Opacity>1</Opacity>
+		<Outline>#191919</Outline>
+		<Active>
+			<Outline>#000000</Outline>
+			<Background>#1c1c1c</Background>
+		</Active>
+		<Background>#1c1c1c</Background>
+	</WindowStyle>
 
-    <Mouse context="root" button="1">exec: feh --randomize --bg-fill img</Mouse>
+	<TrayStyle group="true" list="all">
+		<Font>-*-lemon-*</Font>
+		<Background>#1c1c1c</Background>
+		<Foreground>#6699CC</Foreground>
+		<Outline>#000000</Outline>
+		<Active>
+			<Foreground>#6699CC</Foreground>
+			<Background>#1c1c1c</Background>
+	  	</Active>
+		<Opacity>1</Opacity>
+	</TrayStyle>
+
+	<TaskListStyle>
+		<Font>-*-lemon-*</Font>
+		<Foreground>#FFCC66</Foreground>
+		<Background>#1c1c1c</Background>		
+		<Active>
+			<Foreground>#99CC99</Foreground>
+			<Background>#1c1c1c</Background>
+	  	</Active>
+	</TaskListStyle>
+
+	<ClockStyle>
+		<Foreground>#F2777A</Foreground>
+	</ClockStyle>
+
+	<PopupStyle enabled="false"></PopupStyle>
+
+	<Group>
+		<Option>centered</Option>
+	</Group>
+
+	<FocusModel>click</FocusModel>
+	<SnapMode distance="20">border</SnapMode>
+	<MoveMode coordinates="off">opaque</MoveMode>
+	<ResizeMode coordinates="off">opaque</ResizeMode>
+
+	<Key mask="A" key="Tab">nextstacked</Key>
+	<Key mask="A" key="F4">close</Key>
+	<Key mask="4" key="Right">rdesktop</Key>
+	<Key mask="4" key="Left">ldesktop</Key>
+	<Key mask="4" key="m">maximize</Key>
+	<Key mask="4" key="i">minimize</Key>
+	<Key mask="4" key="e">exec: rofi -show run</Key>
+	<Key mask="4" key="t">exec: urxvt</Key>
+	<Key mask="4" key="f">exec: urxvt -e cdls</Key>
+	<Key mask="4" key="r">exec: jwm -restart</Key>
+	<Key mask="4" key="p">exec: poweroff</Key>
+	<Key key="Print">exec: scrot sct/$RANDOM.png</Key>
+
+	<Mouse context="root" button="1">exec: feh --bg-fill --randomize img/</Mouse>
 </JWM>
