@@ -1,17 +1,13 @@
-URxvt*geometry: 48x12
+XTerm*geometry: 48x12
+XTerm*internalBorder: 16
 
-URxvt*font: -*-lemon-*
-URxvt*boldFont:
-URxvt*italicFont:
-URxvt*bolditalicFont:
+XTerm*font: -*-lemon-*
+XTerm*allowBoldFonts: false
 
-URxvt*scrollBar: false
-URxvt*internalBorder: 16
+XTerm*termName: xterm-256color
 
-URxvt*iso14755: false
-URxvt*iso14755_52: false
-URxvt*perl-ext-common: default,clipboard
-URxvt*keysym.Shift-Control-C: perl:clipboard:copy
-URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+XTerm*VT100.Translations: #override \
+	Ctrl Shift <Key> v: insert-selection(CLIPBOARD)\n\
+	Ctrl Shift <Key> c: copy-selection(CLIPBOARD)\n
 
 #include ".colors.Xresources"

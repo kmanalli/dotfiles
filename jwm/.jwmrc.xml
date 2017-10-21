@@ -76,9 +76,10 @@
 	<Key mask="4" key="m">maximize</Key>
 	<Key mask="4" key="i">minimize</Key>
 	<Key mask="4" key="e">exec: rofi -show run</Key>
-	<Key mask="4" key="t">exec: urxvt</Key>
-	<Key mask="4" key="f">exec: urxvt -e cdls</Key>
+	<Key mask="4" key="t">exec: xterm</Key>
+	<Key mask="4" key="f">exec: xterm -e sh -c cdls &</Key>
 	<Key mask="4" key="r">exec: jwm -restart</Key>
+	<Key mask="4" key="x">exec: jwm -exit</Key>
 	<Key mask="4" key="p">exec: poweroff</Key>
 	<Key key="Print">exec: scrot sct/$RANDOM.png</Key>
 
