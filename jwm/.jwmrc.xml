@@ -2,66 +2,40 @@
 
 <JWM>
 	<StartupCommand>
-		numlockx
-		xcompmgr -c -r 8 -l -12 -t -8 -o .2 &
+		numlockx &
+		feh --bg-fill --randomize img/ &
+		xcompmgr -c -r 0 -o 0 &
 	</StartupCommand>
 
-	<Desktops width="2" height="1">
-		<Background type="solid">#5D6061</Background>
-	</Desktops>
+	<Desktops width="2" height="1"/>
 
-
-	<Tray x="0" y="0" autohide="off">
-		<Spacer width="16"/>
-		<TrayButton label="Menu">exec: rofi -show run</TrayButton>
+	<Tray x="-64" y="-16" height="32">
 		<Spacer width="32"/>
-		<TaskList maxwidth="64"/>
-		<Clock format="%H:%M"><Button>showdesktop</Button></Clock>
-		<Spacer width="16"/>
+		<Clock format="%a %b %d %H:%M"><Button>showdesktop</Button></Clock>
+		<Spacer width="32"/>
 	</Tray>
 
 	<WindowStyle>
-		<Width>1</Width>
-		<Height>1</Height>
 		<Opacity>1</Opacity>
-		<Outline>#191919</Outline>
+		<Outline>#33628C</Outline>
 		<Active>
-			<Outline>#000000</Outline>
-			<Background>#1c1c1c</Background>
+			<Outline>#33628C</Outline>
 		</Active>
-		<Background>#1c1c1c</Background>
+		<Background>#33628C</Background>
 	</WindowStyle>
 
-	<TrayStyle group="true" list="all">
+	<TrayStyle>
 		<Font>-*-lemon-*</Font>
-		<Background>#1c1c1c</Background>
-		<Foreground>#6699CC</Foreground>
-		<Outline>#000000</Outline>
-		<Active>
-			<Foreground>#6699CC</Foreground>
-			<Background>#1c1c1c</Background>
-	  	</Active>
-		<Opacity>1</Opacity>
+		<Background>#2B6154</Background>
+		<Foreground>#ebcb8b</Foreground>
+		<Outline>#2B6154</Outline>
 	</TrayStyle>
-
-	<TaskListStyle>
-		<Font>-*-lemon-*</Font>
-		<Foreground>#FFCC66</Foreground>
-		<Background>#1c1c1c</Background>		
-		<Active>
-			<Foreground>#99CC99</Foreground>
-			<Background>#1c1c1c</Background>
-	  	</Active>
-	</TaskListStyle>
-
-	<ClockStyle>
-		<Foreground>#F2777A</Foreground>
-	</ClockStyle>
 
 	<PopupStyle enabled="false"></PopupStyle>
 
 	<Group>
 		<Option>centered</Option>
+		<Option>noborder</Option>
 	</Group>
 
 	<FocusModel>click</FocusModel>

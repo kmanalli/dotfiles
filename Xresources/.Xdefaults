@@ -4,6 +4,8 @@ XTerm*internalBorder: 16
 XTerm*font: -*-lemon-*
 XTerm*allowBoldFonts: false
 
+XTerm*utf8: 1
+
 XTerm*termName: xterm-256color
 
 XTerm*VT100.Translations: #override \
