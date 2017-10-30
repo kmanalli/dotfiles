@@ -3,11 +3,11 @@
 <JWM>
 	<StartupCommand>
 		numlockx &
-		feh --bg-fill --randomize img/ &
+		./.fehbg &
 		xcompmgr -c -r 2 -l -3 -t -2 -o .3 &
 	</StartupCommand>
 
-	<Desktops width="2" height="1"/>
+	<Desktops width="3" height="1"/>
 
 	<Tray x="-64" y="-16" height="32">
 		<Spacer width="32"/>
@@ -17,18 +17,14 @@
 
 	<WindowStyle>
 		<Opacity>1</Opacity>
-		<Outline>#33628C</Outline>
-		<Active>
-			<Outline>#33628C</Outline>
-		</Active>
-		<Background>#33628C</Background>
+		<Background>#D9D9D9</Background>
 	</WindowStyle>
 
 	<TrayStyle>
 		<Font>-*-lemon-*</Font>
-		<Background>#2B6154</Background>
-		<Foreground>#ebcb8b</Foreground>
-		<Outline>#2B6154</Outline>
+		<Background>#D9D9D9</Background>
+		<Foreground>#434343</Foreground>
+		<Outline>#D9D9D9</Outline>
 	</TrayStyle>
 
 	<PopupStyle enabled="false"></PopupStyle>
