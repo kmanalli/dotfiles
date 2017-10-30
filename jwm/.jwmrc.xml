@@ -4,7 +4,7 @@
 	<StartupCommand>
 		numlockx &
 		feh --bg-fill --randomize img/ &
-		xcompmgr -c -r 0 -o 0 &
+		xcompmgr -c -r 2 -l -3 -t -2 -o .3 &
 	</StartupCommand>
 
 	<Desktops width="2" height="1"/>
