@@ -1,6 +1,13 @@
 # Dotfiles
 
-My personal configs for the apps I use.
+The configuration of the apps I use.
+
+It covers:
+
+- jwm
+- rofi
+- xterm
+- mksh
 
 This is how it looks like.
 

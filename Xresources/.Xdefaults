@@ -1,12 +1,15 @@
-XTerm*geometry: 48x12
+XTerm*geometry: 48x24
 XTerm*internalBorder: 16
 
 XTerm*font: -*-lemon-*
+XTerm*boldFont: -*-lemon-*
+
 XTerm*allowBoldFonts: false
+XTerm*boldMode: false
 
-XTerm*utf8: 1
+XTerm.utf8: 1
 
-XTerm*termName: xterm-256color
+!XTerm*termName: xterm-256color
 
 XTerm*VT100.Translations: #override \
 	Ctrl Shift <Key> v: insert-selection(CLIPBOARD)\n\

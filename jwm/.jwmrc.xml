@@ -4,27 +4,27 @@
 	<StartupCommand>
 		numlockx &
 		./.fehbg &
-		xcompmgr -c -r 2 -l -3 -t -2 -o .3 &
+		xcompmgr -c -r 3 -l -5 -t -4 -o .5 &
 	</StartupCommand>
 
-	<Desktops width="3" height="1"/>
+	<Desktops width="2" height="1"/>
 
 	<Tray x="-64" y="-16" height="32">
 		<Spacer width="32"/>
-		<Clock format="%a %b %d %H:%M"><Button>showdesktop</Button></Clock>
+		<Clock format="%a %b %d %H:%M"/>
 		<Spacer width="32"/>
 	</Tray>
 
 	<WindowStyle>
 		<Opacity>1</Opacity>
-		<Background>#D9D9D9</Background>
+		<Background>#2B2B2B</Background>
 	</WindowStyle>
 
 	<TrayStyle>
 		<Font>-*-lemon-*</Font>
-		<Background>#D9D9D9</Background>
-		<Foreground>#434343</Foreground>
-		<Outline>#D9D9D9</Outline>
+		<Outline>#2B2B2B</Outline>
+		<Background>#2B2B2B</Background>
+		<Foreground>#D0D8DB</Foreground>
 	</TrayStyle>
 
 	<PopupStyle enabled="false"></PopupStyle>
@@ -44,7 +44,6 @@
 	<Key mask="4" key="Right">rdesktop</Key>
 	<Key mask="4" key="Left">ldesktop</Key>
 	<Key mask="4" key="m">maximize</Key>
-	<Key mask="4" key="i">minimize</Key>
 	<Key mask="4" key="e">exec: rofi -show run</Key>
 	<Key mask="4" key="t">exec: xterm</Key>
 	<Key mask="4" key="f">exec: xterm -e sh -c cdls &</Key>
