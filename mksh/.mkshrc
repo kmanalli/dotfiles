@@ -1,16 +1,44 @@
-[[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]  && setleds -D +num
-
-export PS1=$(printf "\033[36m #@ \033[0m")
-export EDITOR="micro"
-export GOPATH="$HOME/git/go"
-
-alias ls="ls --color"
-alias la="ls -A"
-
 push () {
 	git add -A
 	printf " commit: >> "
 	read -r ans
-	git commit -m "${ans:-"Nothing interesting to say"}"
+	git commit -m "${ans:-"- - -"}"
 	git push
 }
+
+upload () {
+	basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g')
+	curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile"
+}
+
+wifi () {
+	sudo ip link set wlp6s2 up
+	sudo iw wlp6s2 connect -w abcd
+}
+
+colorize () {
+	color=""
+
+	for a in 0 1 2 3 4 5; do
+		color=${color}$(shuf -n 1 -e 5 6)
+	done
+
+	printf "\e]11;#$color\007"
+}
+
+[[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]  &&  {
+	setleds -D +num
+	wifi > /dev/null 2>&1 &
+}
+
+colorize
+
+export PS1=$(printf "\033[36m #@ \033[0m")
+
+export EDITOR="micro"
+export VISUAL="xterm -g 64x64 -e micro"
+
+export GOPATH="$HOME/git/go"
+
+alias ls="ls --color"
+alias la="ls -A"

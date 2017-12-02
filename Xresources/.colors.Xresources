@@ -1,36 +1,38 @@
-! special
-*.foreground:   #D0D8DB
-*.background:   #2B2B2B
-*.cursorColor:  #D0D8DB
+*.foreground:   #d3d3d3
+*.background:   #555555
+*.cursorColor:  #c1c1c1
 
 ! black
-*.color0:       #5A636B
-*.color8:       #5A636B
+*.color0:       #2b303b
+*.color8:       #65737e
 
 ! red
-*.color1:       #C78F94
-*.color9:       #C78F94
+*.color1:       #bf616a
+*.color9:       #bf616a
 
 ! green
-*.color2:       #95C7A0
-*.color10:      #95C7A0
+*.color2:       #a3be8c
+*.color10:      #a3be8c
 
 ! yellow
-*.color3:       #C7C195
-*.color11:      #C7C195
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
 
 ! blue
-*.color4:       #95ADC7
-*.color12:      #95ADC7
+*.color4:       #8fa1b3
+*.color12:      #8fa1b3
 
 ! magenta
-*.color5:       #c795ae
-*.color13:      #c795ae
+*.color5:       #b48ead
+*.color13:      #b48ead
 
 ! cyan
-*.color6:       #95C7C3
-*.color14:      #95C7C3
+*.color6:       #96b5b4
+*.color14:      #96b5b4
 
 ! white
-*.color7:       #D0D8DB
-*.color15:      #D0D8DB
+*.color7:       #c0c5ce
+*.color15:      #eff1f5
+
+rofi.color-normal: #c1cdc1, #6688aa, #c1cdc1, #c1cdc1, #8f6f8f
+rofi.color-window: #c1cdc1, #181818, #181818
