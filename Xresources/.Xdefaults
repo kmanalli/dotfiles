@@ -1,4 +1,4 @@
-XTerm*geometry: 48x32
+XTerm*geometry: 64x42
 XTerm*internalBorder: 16
 
 XTerm*font: -*-lemon-*
@@ -8,22 +8,10 @@ XTerm*allowBoldFonts: false
 XTerm*boldMode: false
 
 XTerm*utf8: 1
-XTerm*termName: xterm-256color
+XTerm*termName: xterm-truecolor
 
 XTerm*VT100.Translations: #override \
-	Ctrl Shift <Key> v: insert-selection(CLIPBOARD)\n\
+	Ctrl <Key> v: insert-selection(CLIPBOARD)\n\
 	Ctrl Shift <Key> c: copy-selection(CLIPBOARD)\n
-
-rofi.show: run
-rofi.width: 16
-rofi.lines: 16
-rofi.bw: 0
-rofi.location: 7
-rofi.padding: 16
-rofi.yoffset: -16
-rofi.xoffset: 32
-rofi.separator-style: solid
-rofi.hide-scrollbar: true
-rofi.font: artwiz lemon 7
 
 #include ".colors.Xresources"

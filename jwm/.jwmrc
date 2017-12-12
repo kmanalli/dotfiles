@@ -3,7 +3,7 @@
 <JWM>
 	<StartupCommand>
 		numlockx
-		./.fehbg
+		feh --bg-fill --randomize ~/img
 		shadow
 	</StartupCommand>
 
@@ -22,15 +22,14 @@
 
 	<TrayStyle>
 		<Font>-*-lemon-*</Font>
-		<Outline>#665655</Outline>
-		<Background>#665655</Background>
-		<Foreground>#d3d3d3</Foreground>
+		<Outline>#433333</Outline>
+		<Background>#433333</Background>
+		<Foreground>#ecf2f0</Foreground>
 	</TrayStyle>
 
 	<PopupStyle enabled="false"></PopupStyle>
 
 	<Group>
-		<Option>centered</Option>
 		<Option>noborder</Option>
 	</Group>
 
@@ -44,9 +43,10 @@
 	<Key mask="4" key="Right">rdesktop</Key>
 	<Key mask="4" key="Left">ldesktop</Key>
 	<Key mask="4" key="m">maximize</Key>
+	<Key mask="4" key="e">exec: dmenu_run -x 592 -y 16 -w 256 -h 32 -fn '-*-lemon-*-' -nb '#444334' -sb '#444334' -dim '.32' -dc '#000000'</Key>
 	<Key mask="4" key="w">exec: chromium</Key>
 	<Key mask="4" key="t">exec: xterm</Key>
-	<Key mask="4" key="f">exec: xterm -e sh -c cdls &</Key>
+	<Key mask="4" key="f">exec: xterm -e sh -c cdls</Key>
 	<Key mask="4" key="r">exec: jwm -restart</Key>
 	<Key mask="4" key="x">exec: jwm -exit</Key>
 	<Key mask="4" key="p">exec: poweroff</Key>

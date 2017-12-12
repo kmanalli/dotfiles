@@ -2,7 +2,7 @@ push () {
 	git add -A
 	printf " commit: >> "
 	read -r ans
-	git commit -m "${ans:-"- - -"}"
+	git commit -m "${ans:-"Commit."}"
 	git push
 }
 
@@ -13,25 +13,13 @@ upload () {
 
 wifi () {
 	sudo ip link set wlp6s2 up
-	sudo iw wlp6s2 connect -w abcd
-}
-
-colorize () {
-	color=""
-
-	for a in 0 1 2 3 4 5; do
-		color=${color}$(shuf -n 1 -e 5 6)
-	done
-
-	printf "\e]11;#$color\007"
+	sudo iw wlp6s2 connect -w deadbeef
 }
 
 [[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]  &&  {
 	setleds -D +num
-	wifi > /dev/null 2>&1 &
+	wifi &
 }
-
-colorize
 
 export PS1=$(printf "\033[36m #@ \033[0m")
 
