@@ -13,15 +13,25 @@ upload () {
 
 wifi () {
 	sudo ip link set wlp6s2 up
-	sudo iw wlp6s2 connect -w deadbeef
+	sudo iw wlp6s2 connect -w nxos
 }
 
-[[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]  &&  {
+if [[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]; then
 	setleds -D +num
-	wifi &
+	wifi
+fi
+
+color () {
+	c=
+	for a in 1 2 3 4 5 6; do
+		c=$c$(shuf -n 1 -e 3 4)
+	done
+	printf "\e]11;#$c\007"
 }
 
-export PS1=$(printf "\033[36m #@ \033[0m")
+color
+
+export PS1=$(printf "\e[36m #@ \033[0m")
 
 export EDITOR="micro"
 export VISUAL="xterm -g 64x64 -e micro"
@@ -30,3 +40,5 @@ export GOPATH="$HOME/git/go"
 
 alias ls="ls --color"
 alias la="ls -A"
+
+clone () { git clone https://github.com/$1; }

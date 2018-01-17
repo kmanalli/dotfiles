@@ -1,4 +1,4 @@
-XTerm*geometry: 64x42
+XTerm*geometry: 48x32
 XTerm*internalBorder: 16
 
 XTerm*font: -*-lemon-*
