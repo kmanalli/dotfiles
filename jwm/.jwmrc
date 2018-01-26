@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<JWM>
+	<StartupCommand>
+		numlockx
+		./.fehbg
+		shadow
+	</StartupCommand>
+
+	<Desktops width="2" height="1"/>
+
+	<WindowStyle>
+		<Opacity>1</Opacity>
+		<Background>#2A304A</Background>
+	</WindowStyle>
+
+	<TrayStyle>
+		<Font>-*-lemon-*</Font>
+		<Outline>#665655</Outline>
+		<Background>#665655</Background>
+		<Foreground>#d3d3d3</Foreground>
+	</TrayStyle>
+
+	<PopupStyle enabled="false"></PopupStyle>
+
+	<Group>
+		<Option>centered</Option>
+		<Option>noborder</Option>
+	</Group>
+
+	<FocusModel>click</FocusModel>
+	<SnapMode distance="20">border</SnapMode>
+	<MoveMode coordinates="off">opaque</MoveMode>
+	<ResizeMode coordinates="off">opaque</ResizeMode>
+
+	<Key mask="A" key="Tab">nextstacked</Key>
+	<Key mask="A" key="F4">close</Key>
+	<Key mask="4" key="Right">rdesktop</Key>
+	<Key mask="4" key="Left">ldesktop</Key>
+	<Key mask="4" key="m">maximize</Key>
+	<Key mask="4" key="w">exec: chromium-browser</Key>
+	<Key mask="4" key="t">exec: xterm</Key>
+	<Key mask="4" key="r">exec: jwm -restart</Key>
+	<Key mask="4" key="x">exec: jwm -exit</Key>
+	<Key mask="4" key="e">exec: dmenu_run</Key>
+	<Key mask="4" key="p">exec: poweroff</Key>
+	<Key key="Print">exec: scrot sct/$RANDOM.png</Key>
+
+	<Mouse context="root" button="1">exec: feh --bg-fill --randomize img/</Mouse>
+</JWM>
