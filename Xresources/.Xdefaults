@@ -1,14 +1,14 @@
-XTerm*geometry: 64x32
+XTerm*geometry: 32x16
 XTerm*internalBorder: 16
 
-XTerm*font: -*-lemon-*
-XTerm*boldFont: -*-lemon-*
-
-XTerm*allowBoldFonts: false
-XTerm*boldMode: false
+XTerm*renderFont: true
+XTerm*faceName: UbuntuMonoBold
+XTerm*faceSize: 20
 
 XTerm*utf8: 1
 XTerm*termName: xterm-truecolor
+
+XTerm*loginShell: true
 
 XTerm*VT100.Translations: #override \
 	Ctrl <Key> v: insert-selection(CLIPBOARD)\n\

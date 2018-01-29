@@ -3,28 +3,25 @@
 <JWM>
 	<StartupCommand>
 		numlockx
-		./.fehbg
-		shadow
+		feh --bg-fill --randomize ~/img/
 	</StartupCommand>
 
 	<Desktops width="2" height="1"/>
 
 	<WindowStyle>
+		<Corner>0</Corner>
 		<Opacity>1</Opacity>
-		<Background>#2A304A</Background>
+		<Background>#4d4d4d</Background>
+		<Outline>#4d4d4d</Outline>
+		<Active>
+			<Background>#5f819d</Background>
+			<Outline>#5f819d</Outline>
+		</Active>
 	</WindowStyle>
-
-	<TrayStyle>
-		<Font>-*-lemon-*</Font>
-		<Outline>#665655</Outline>
-		<Background>#665655</Background>
-		<Foreground>#d3d3d3</Foreground>
-	</TrayStyle>
 
 	<PopupStyle enabled="false"></PopupStyle>
 
 	<Group>
-		<Option>centered</Option>
 		<Option>noborder</Option>
 	</Group>
 
@@ -39,12 +36,11 @@
 	<Key mask="4" key="Left">ldesktop</Key>
 	<Key mask="4" key="m">maximize</Key>
 	<Key mask="4" key="w">exec: chromium-browser</Key>
-	<Key mask="4" key="t">exec: xterm</Key>
+	<Key mask="4" key="t">exec: xterm -fullscreen</Key>
 	<Key mask="4" key="r">exec: jwm -restart</Key>
 	<Key mask="4" key="x">exec: jwm -exit</Key>
 	<Key mask="4" key="e">exec: dmenu_run</Key>
+	<Key mask="4" key="b">exec: feh --bg-fill --randomize ~/img/</Key>
 	<Key mask="4" key="p">exec: poweroff</Key>
 	<Key key="Print">exec: scrot sct/$RANDOM.png</Key>
-
-	<Mouse context="root" button="1">exec: feh --bg-fill --randomize img/</Mouse>
 </JWM>

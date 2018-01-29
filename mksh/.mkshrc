@@ -11,25 +11,19 @@ upload () {
 	curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile"
 }
 
-wifi () {
-	sudo ip link set wlp6s2 up
-	sudo iw wlp6s2 connect -w nxos
-}
-
 if [[ -z $SSH_TTY ]] && [[ -z $DISPLAY ]]; then
 	setleds -D +num
-	wifi
 fi
 
 color () {
 	c=
-	for a in 1 2 3 4 5 6; do
-		c=$c$(shuf -n 1 -e 3 4)
-	done
+	for a in 1 2 3; do
+		c=$c$(shuf -n 1 -e 11 22)
+	done 
 	printf "\e]11;#$c\007"
 }
 
-color
+# color
 
 export PS1=$(printf "\e[36m #@ \033[0m")
 
